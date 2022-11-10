@@ -1,0 +1,17 @@
+{
+  "name": "exo01",
+  "version": "1.0.0",
+  "description": "fichier node exercice formation plb",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "calculator": "node calculator.js"
+  },
+  "author": "NBU",
+  "license": "ISC"
+}

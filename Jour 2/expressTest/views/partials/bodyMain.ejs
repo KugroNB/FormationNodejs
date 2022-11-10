@@ -1,0 +1,23 @@
+<body>
+
+    <H1> body</H1>
+    <h2><%= message %></h2>
+
+    <form action="/post_item" method="POST">
+        Movie Name: <input type="text" name="movie_name">  <br>
+        Poster URL: <input type="text" name="poster_url">
+        <input type="submit" value="Submit">
+     </form>
+
+    <form action="/post_upload" method="POST" enctype="multipart/form-data">
+        file: <input type="file" name="file" size="50"> 
+        <input type="submit" value="upload">
+    </form>
+
+    <%
+        movies.forEach((movie) => { %>
+        <h3><%= movie.name %></h3>
+        <img src="<%= movie.url %>" width="500" length="500">
+        <% });
+    %>   
+</body>
